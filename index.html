@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="logo.jpg" alt="Profile" class="profile-pic">
+                    <div class="profile-overlay">
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="hero-title">Professional Skills Showcase</h2>
+                <p class="hero-subtitle">Exploring Innovation & Excellence</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Portfolio Topics</h2>
+            <div class="carousel-container">
+                <button id="prev" class="nav-arrow"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel">
+                    <div class="cards-wrapper">
+                        <div class="card" onclick="openPopup('Brain Analysis & Self Introduction', 'Understanding the left and right brain functions has helped me identify my strengths in analytical thinking and creative problem-solving. Through self-reflection, I\'ve discovered my natural inclination towards logical reasoning while actively working on enhancing my creative abilities. This understanding has been crucial in shaping my approach to problem-solving and team collaboration.', '')">
+                            <div class="card-icon"><i class="fas fa-brain"></i></div>
+                            <h3>Brain Analysis</h3>
+                            <div class="card-content">
+                                <h4>Left & Right Brain Understanding</h4>
+                                <ul class="week-details">
+                                    <li><i class="fas fa-check"></i> Self-Analysis</li>
+                                    <li><i class="fas fa-check"></i> Personal Strengths</li>
+                                    <li><i class="fas fa-check"></i> Development Areas</li>
+                                </ul>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="view-more">View Details</span>
+                            </div>
+                        </div>
+                        <div class="card profile-sheet-card">
+                            <div class="card-icon"><i class="fas fa-user-tie"></i></div>
+                            <h3>Profile Sheet</h3>
+                            <div class="card-content">
+                                <h4>Interview Preparation</h4>
+                                <ul class="week-details">
+                                    <li><i class="fas fa-check"></i> 20 Key Questions</li>
+                                    <li><i class="fas fa-check"></i> Career Goals</li>
+                                    <li><i class="fas fa-check"></i> Technical Skills</li>
+                                </ul>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="view-more">View Details</span>
+                            </div>
+                        </div>
+                        <div class="card" onclick="openPopup('Presentation Skills', 'Through extensive practice and feedback, I\'ve developed strong presentation skills. I\'ve learned to structure content effectively, use visual aids appropriately, and engage with the audience. My presentations now incorporate storytelling techniques and clear data visualization to convey complex information effectively.', 'PresentationSkills.mp4')">
+                            <div class="card-icon"><i class="fas fa-presentation"></i></div>
+                            <h3>Presentation Skills</h3>
+                            <div class="card-content">
+                                <h4>Communication Excellence</h4>
+                                <ul class="week-details">
+                                    <li><i class="fas fa-check"></i> Content Structure</li>
+                                    <li><i class="fas fa-check"></i> Visual Aids</li>
+                                    <li><i class="fas fa-check"></i> Audience Engagement</li>
+                                </ul>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="view-more">View Details</span>
+                            </div>
+                        </div>
+                        <div class="card" onclick="openPopup('Writing Skills', 'I\'ve mastered the 7C\'s of communication through practical application in email writing. By analyzing and correcting poor email examples, I\'ve learned to create clear, concise, and professional communications. My emails now demonstrate proper structure, tone, and formatting while maintaining professionalism.', '')">
+                            <div class="card-icon"><i class="fas fa-pen-fancy"></i></div>
+                            <h3>Writing Skills</h3>
+                            <div class="card-content">
+                                <h4>7C\'s of Communication</h4>
+                                <ul class="week-details">
+                                    <li><i class="fas fa-check"></i> Email Writing</li>
+                                    <li><i class="fas fa-check"></i> Professional Tone</li>
+                                    <li><i class="fas fa-check"></i> Clear Structure</li>
+                                </ul>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="view-more">View Details</span>
+                            </div>
+                        </div>
+                        <div class="card" onclick="openPopup('Group Discussion', 'I\'ve developed a comprehensive understanding of Group Discussion dynamics, including various types of GDs and effective participation techniques. Through practice, I\'ve learned to balance assertiveness with respect, contribute meaningfully, and handle different GD formats while maintaining professional decorum.', '')">
+                            <div class="card-icon"><i class="fas fa-users"></i></div>
+                            <h3>Group Discussion</h3>
+                            <div class="card-content">
+                                <h4>GD Techniques</h4>
+                                <ul class="week-details">
+                                    <li><i class="fas fa-check"></i> Do\'s & Don\'ts</li>
+                                    <li><i class="fas fa-check"></i> GD Types</li>
+                                    <li><i class="fas fa-check"></i> Idea Generation</li>
+                                </ul>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="view-more">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="next" class="nav-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="SmartNav.png" alt="SMARTNAV Logo">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Adityakeerti/SmartNav" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SMARTNAV – Smarter Routes for Faster Deliveries</h3>
+                        <p>SMARTNAV is an intelligent routing system that combines Floyd-Warshall and A* algorithms to optimize delivery routes for fast commerce. Designed to minimize delivery time and fuel usage, it provides real-time pathfinding in large, structured networks. With a simple UI and scalable performance, SMARTNAV enhances logistics for the on-demand delivery era.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Livana Logo.png" alt="LivAna Logo">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Adityakeerti/LivAna-3.0" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>LivAna 3.0</h3>
+                        <p>LivAna is a smart mobile app that connects students with nearby PGs, grocery stores, and mess services—all in one place. With trusted reviews, service details, and an AI-moderated student forum, LivAna makes relocation stress-free and builds a safer, more connected campus community.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>C++</span>
+                            <span>Swift</span>
+                            <span>CMake</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>adityaanurag461@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>8809691824</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Dehradun, Uttarakhand</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="close" onclick="closePopup()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
+            <div class="video-container">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/7iocGw7vavg?si=GGQx4lHjBmTfl24M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profiling Sheet Modal -->
+    <div id="profiling-modal" class="popup" style="display:none;">
+        <div class="popup-content" style="max-width:900px;width:95vw;">
+            <button class="close" onclick="closeProfilingModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 style="margin-bottom:2rem;">Profiling Sheet</h2>
+            <div class="profiling-section">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">1. Write your career objective.</button>
+                        <div class="accordion-body">To pursue a career as a Software Engineer with a strong inclination towards AI research. I aim to contribute meaningfully to the development of intelligent systems while continuously learning and growing in both engineering and research roles.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">2. Why do you want to be an engineer? Elaborate reasons.</button>
+                        <div class="accordion-body">Engineering has been my passion since childhood. This passion was nurtured and developed under the influence of my maternal uncle, who introduced me to the world of engineering. It fascinates me how technology can solve real-world problems, and being part of that impact drives me.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">3. Write about projects or internship you have done/ are doing along with the learning.</button>
+                        <div class="accordion-body">I have worked on several projects including a Warehouse Management System using JavaFX, Spring Boot, and MySQL. Additionally, I developed a complete website within six hours and built a functional app during a hackathon. These experiences taught me project management, backend API development, teamwork, and how to meet strict deadlines with quality output.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">4. What would you consider a significant achievement in your life and why?</button>
+                        <div class="accordion-body">Developing a website in just six hours and building an app during a hackathon stand out as significant achievements. They showcased my focus, technical ability, and resilience under pressure, validating my readiness for real-world challenges.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">5. Write about a failure of yours which you consider to share. What have you learned from it?</button>
+                        <div class="accordion-body">Failing the JEE exam was a major setback that made me introspect and realign my goals. It helped me realize the importance of following my passion, which was always computer science. Since then, I've been more focused and determined.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">6. What are your strengths? Write one or two instances where you have demonstrated your strengths.</button>
+                        <div class="accordion-body">My strengths include strong communication skills, leadership, and confidence. I've always taken the lead in team projects, ensuring everyone stays coordinated and focused. Whether it's building software or solving problems, I effectively communicate ideas and strategies.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">7. Write about your weaknesses. What are you doing to overcome your weaknesses?</button>
+                        <div class="accordion-body">I tend to get too emotional and occasionally procrastinate. To overcome these, I've started journaling to better manage emotions and set structured routines and deadlines to reduce procrastination.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">8. What is the most difficult moment that you have faced in your life so far? What qualities helped you to overcome the moment?</button>
+                        <div class="accordion-body">The most difficult moment was dealing with the pressure and eventual failure of the JEE exam. I overcame it by focusing on what I truly loved – computer science – and started building skills and projects in that domain with renewed purpose.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">9. Apart from academics, what else are you interested in?</button>
+                        <div class="accordion-body"><b>Extracurricular Activities:</b> Writing rap music<br><b>Sports:</b> Playing video games<br><b>Other Interests:</b> Music production and software development</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">10. Give an example of an area, concept or thing that you are absolutely passionate about.</button>
+                        <div class="accordion-body">I am deeply passionate about both music and software development. Coding gives me a sense of purpose, while music allows me to express myself creatively.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">11. Describe yourself as an individual in 5 lines.</button>
+                        <div class="accordion-body">I'm a goal-oriented individual who doesn't stop until the task is completed. I believe in clarity, consistency, and continuous self-growth. I approach challenges with a positive, "that guy" mindset. I thrive under pressure and value both hard work and smart work. I am someone who learns quickly and adapts fast.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">12. What kinds of people do you enjoy working with?</button>
+                        <div class="accordion-body">I enjoy working with team members who understand the importance of coordination, mutual respect, and responsibility. Effective communication and collaboration are key.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">13. What kinds of people you don't want to work with? What would you do if they became your senior in your dream job?</button>
+                        <div class="accordion-body">I don't prefer working with people who disrupt team harmony or show disrespect. However, if one became my senior, I would remain professional, adapt to their style, and maintain my performance and integrity.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">14. What do you expect from your first job? Prioritize and write in order.</button>
+                        <div class="accordion-body">1. Personal growth and learning<br>2. Supportive team and environment<br>3. Decent salary and job stability</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">15. In the past year, what have you been dissatisfied about in your performance?</button>
+                        <div class="accordion-body">In a 24-hour hackathon, I completed all my tasks but lost momentum in the final hour due to fatigue. It taught me the value of pacing myself and managing energy efficiently.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">16. Rate yourself out of 5 in verbal communication. What are you doing to improve your communication skills?</button>
+                        <div class="accordion-body">I would rate myself 4.5/5. I continuously engage in team discussions and public presentations, and I'm also actively practicing through personal projects and communication exercises.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">17. Who is your role model? What qualities of that person you would like to see in your personality and why?</button>
+                        <div class="accordion-body">My role model is my great-grandfather. He was exceptional in every way—intelligent, disciplined, and respected. If I could even become 5% of what he was, I would consider myself successful. I aspire to inherit his wisdom and integrity.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">18. Write a few lines about your friends. Do you think they help/ may help you in achieving your goals? If yes, how? If no, why do you accompany them?</button>
+                        <div class="accordion-body">My friends are supportive and focused individuals. They motivate me to study, stay disciplined, and focus on building my career. Their influence keeps me grounded and goal-focused.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">19. Write 3 leadership qualities. How many do you possess? Write an instance where you have applied those qualities.</button>
+                        <div class="accordion-body"><b>Communication</b><br><b>Team Coordination</b><br><b>Decision Making</b><br>I possess all three and have demonstrated them by leading multiple college project teams. I ensure every member contributes and feels valued, which keeps the group intact and effective.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">20. So finally, tell us something more about yourself or introduce yourself.</button>
+                        <div class="accordion-body">I am a determined and ambitious individual who believes in hard work, growth, and passion. I love building things—whether it's a software project or a song. I strive to improve every day and aim to be someone who leaves a meaningful impact through innovation, leadership, and empathy.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
+ 
