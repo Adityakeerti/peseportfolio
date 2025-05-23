@@ -68,7 +68,7 @@
                                 <span class="view-more">View Details</span>
                             </div>
                         </div>
-                        <div class="card profile-sheet-card">
+                        <div class="card profile-sheet-card" onclick="openPopup('Profile Sheet', `1. Write your career objective.\nTo pursue a career as a Software Engineer with a strong inclination towards AI research. I aim to contribute meaningfully to the development of intelligent systems while continuously learning and growing in both engineering and research roles.\n\n2. Why do you want to be an engineer? Elaborate reasons.\nEngineering has been my passion since childhood. This passion was nurtured and developed under the influence of my maternal uncle, who introduced me to the world of engineering. It fascinates me how technology can solve real-world problems, and being part of that impact drives me.\n\n3. Write about projects or internship you have done/ are doing along with the learning.\nI have worked on several projects including a Warehouse Management System using JavaFX, Spring Boot, and MySQL. Additionally, I developed a complete website within six hours and built a functional app during a hackathon. These experiences taught me project management, backend API development, teamwork, and how to meet strict deadlines with quality output.\n\n4. What would you consider a significant achievement in your life and why?\nDeveloping a website in just six hours and building an app during a hackathon stand out as significant achievements. They showcased my focus, technical ability, and resilience under pressure, validating my readiness for real-world challenges.\n\n5. Write about a failure of yours which you consider to share. What have you learned from it?\nFailing the JEE exam was a major setback that made me introspect and realign my goals. It helped me realize the importance of following my passion, which was always computer science. Since then, I've been more focused and determined.\n\n6. What are your strengths and weaknesses?\nStrengths: Quick learner, strong analytical skills, adaptability, teamwork. Weaknesses: Sometimes overthink, can be too detail-oriented.\n\n7. What are your short-term and long-term goals?\nShort-term: Secure a software engineering position and contribute to impactful projects. Long-term: Lead AI research teams and develop innovative solutions.\n\n8. How do you handle stress and pressure?\nI break down tasks, prioritize, and focus on solutions. I also take short breaks and practice mindfulness.\n\n9. Apart from academics, what else are you interested in?\nExtracurricular Activities: Writing rap music. Sports: Playing video games. Other Interests: Music production and software development.\n\n10. Give an example of an area, concept or thing that you are absolutely passionate about.\nI am deeply passionate about both music and software development. Coding gives me a sense of purpose, while music allows me to express myself creatively.\n\n11. Describe yourself as an individual in 5 lines.\nI'm a goal-oriented individual who doesn't stop until the task is completed. I believe in clarity, consistency, and continuous self-growth. I approach challenges with a positive, 'that guy' mindset. I thrive under pressure and value both hard work and smart work. I am someone who learns quickly and adapts fast.\n\n12. What kinds of people do you enjoy working with?\nI enjoy working with team members who understand the importance of coordination, mutual respect, and responsibility. Effective communication and collaboration are key.\n\n13. What is your definition of success?\nSuccess is achieving personal and professional growth while making a positive impact on others.\n\n14. How do you handle failure?\nI reflect, learn from mistakes, and use them as stepping stones for improvement.\n\n15. What motivates you?\nThe desire to solve problems, create value, and continuously improve motivates me.\n\n16. How do you manage your time?\nI prioritize tasks, set deadlines, and use productivity tools to stay organized.\n\n17. Who is your role model? What qualities of that person you would like to see in your personality and why?\nMy role model is my great-grandfather. He was exceptional in every way—intelligent, disciplined, and respected. If I could even become 5% of what he was, I would consider myself successful. I aspire to inherit his wisdom and integrity.\n\n18. Write a few lines about your friends. Do you think they help/ may help you in achieving your goals? If yes, how? If no, why do you accompany them?\nMy friends are supportive and focused individuals. They motivate me to study, stay disciplined, and focus on building my career. Their influence keeps me grounded and goal-focused.\n\n19. Write 3 leadership qualities. How many do you possess? Write an instance where you have applied those qualities.\nCommunication, Team Coordination, Decision Making. I possess all three and have demonstrated them by leading multiple college project teams. I ensure every member contributes and feels valued, which keeps the group intact and effective.\n\n20. So finally, tell us something more about yourself or introduce yourself.\nI am a determined and ambitious individual who believes in hard work, growth, and passion. I love building things—whether it's a software project or a song. I strive to improve every day and aim to be someone who leaves a meaningful impact through innovation, leadership, and empathy.`, '')">
                             <div class="card-icon"><i class="fas fa-user-tie"></i></div>
                             <h3>Profile Sheet</h3>
                             <div class="card-content">
@@ -122,13 +122,13 @@
                                 <span class="view-more">View Details</span>
                             </div>
                         </div>
-                        <div class="card" onclick="openPopup('Group Discussion', 'I\'ve developed a comprehensive understanding of Group Discussion dynamics, including various types of GDs and effective participation techniques. Through practice, I\'ve learned to balance assertiveness with respect, contribute meaningfully, and handle different GD formats while maintaining professional decorum.', '')">
+                        <div class="card" onclick="openPopup('Group Discussion', `<b>Participation and Learning Experience</b><ul><li>Engaged in a Group Discussion (GD) session as part of a classroom activity.</li><li>Developed communication, critical thinking, and teamwork skills.</li><li>Learned to structure thoughts quickly, actively listen to different perspectives, and respond with clarity and confidence.</li></ul><b>Key Takeaways</b><ul><li>Staying calm under pressure during discussions.</li><li>Respectfully engaging in debates and presenting arguments constructively.</li><li>Contributing meaningfully to team conversations.</li></ul><b>Impact and Personal Growth</b><ul><li>Improved verbal communication and clarity in expressing ideas.</li><li>Boosted confidence in public speaking.</li><li>Developed leadership skills in collaborative discussions.</li></ul>`, '')">
                             <div class="card-icon"><i class="fas fa-users"></i></div>
                             <h3>Group Discussion</h3>
                             <div class="card-content">
                                 <h4>GD Techniques</h4>
                                 <ul class="week-details">
-                                    <li><i class="fas fa-check"></i> Do\'s & Don\'ts</li>
+                                    <li><i class="fas fa-check"></i> Do's & Don'ts</li>
                                     <li><i class="fas fa-check"></i> GD Types</li>
                                     <li><i class="fas fa-check"></i> Idea Generation</li>
                                 </ul>
@@ -236,102 +236,8 @@
             </button>
             <h2 id="popup-title"></h2>
             <p id="popup-text"></p>
-            <div class="video-container">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/7iocGw7vavg?si=GGQx4lHjBmTfl24M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-
-    <!-- Profiling Sheet Modal -->
-    <div id="profiling-modal" class="popup" style="display:none;">
-        <div class="popup-content" style="max-width:900px;width:95vw;">
-            <button class="close" onclick="closeProfilingModal()">
-                <i class="fas fa-times"></i>
-            </button>
-            <h2 style="margin-bottom:2rem;">Profiling Sheet</h2>
-            <div class="profiling-section">
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button class="accordion-header">1. Write your career objective.</button>
-                        <div class="accordion-body">To pursue a career as a Software Engineer with a strong inclination towards AI research. I aim to contribute meaningfully to the development of intelligent systems while continuously learning and growing in both engineering and research roles.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">2. Why do you want to be an engineer? Elaborate reasons.</button>
-                        <div class="accordion-body">Engineering has been my passion since childhood. This passion was nurtured and developed under the influence of my maternal uncle, who introduced me to the world of engineering. It fascinates me how technology can solve real-world problems, and being part of that impact drives me.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">3. Write about projects or internship you have done/ are doing along with the learning.</button>
-                        <div class="accordion-body">I have worked on several projects including a Warehouse Management System using JavaFX, Spring Boot, and MySQL. Additionally, I developed a complete website within six hours and built a functional app during a hackathon. These experiences taught me project management, backend API development, teamwork, and how to meet strict deadlines with quality output.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">4. What would you consider a significant achievement in your life and why?</button>
-                        <div class="accordion-body">Developing a website in just six hours and building an app during a hackathon stand out as significant achievements. They showcased my focus, technical ability, and resilience under pressure, validating my readiness for real-world challenges.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">5. Write about a failure of yours which you consider to share. What have you learned from it?</button>
-                        <div class="accordion-body">Failing the JEE exam was a major setback that made me introspect and realign my goals. It helped me realize the importance of following my passion, which was always computer science. Since then, I've been more focused and determined.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">6. What are your strengths? Write one or two instances where you have demonstrated your strengths.</button>
-                        <div class="accordion-body">My strengths include strong communication skills, leadership, and confidence. I've always taken the lead in team projects, ensuring everyone stays coordinated and focused. Whether it's building software or solving problems, I effectively communicate ideas and strategies.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">7. Write about your weaknesses. What are you doing to overcome your weaknesses?</button>
-                        <div class="accordion-body">I tend to get too emotional and occasionally procrastinate. To overcome these, I've started journaling to better manage emotions and set structured routines and deadlines to reduce procrastination.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">8. What is the most difficult moment that you have faced in your life so far? What qualities helped you to overcome the moment?</button>
-                        <div class="accordion-body">The most difficult moment was dealing with the pressure and eventual failure of the JEE exam. I overcame it by focusing on what I truly loved – computer science – and started building skills and projects in that domain with renewed purpose.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">9. Apart from academics, what else are you interested in?</button>
-                        <div class="accordion-body"><b>Extracurricular Activities:</b> Writing rap music<br><b>Sports:</b> Playing video games<br><b>Other Interests:</b> Music production and software development</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">10. Give an example of an area, concept or thing that you are absolutely passionate about.</button>
-                        <div class="accordion-body">I am deeply passionate about both music and software development. Coding gives me a sense of purpose, while music allows me to express myself creatively.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">11. Describe yourself as an individual in 5 lines.</button>
-                        <div class="accordion-body">I'm a goal-oriented individual who doesn't stop until the task is completed. I believe in clarity, consistency, and continuous self-growth. I approach challenges with a positive, "that guy" mindset. I thrive under pressure and value both hard work and smart work. I am someone who learns quickly and adapts fast.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">12. What kinds of people do you enjoy working with?</button>
-                        <div class="accordion-body">I enjoy working with team members who understand the importance of coordination, mutual respect, and responsibility. Effective communication and collaboration are key.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">13. What kinds of people you don't want to work with? What would you do if they became your senior in your dream job?</button>
-                        <div class="accordion-body">I don't prefer working with people who disrupt team harmony or show disrespect. However, if one became my senior, I would remain professional, adapt to their style, and maintain my performance and integrity.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">14. What do you expect from your first job? Prioritize and write in order.</button>
-                        <div class="accordion-body">1. Personal growth and learning<br>2. Supportive team and environment<br>3. Decent salary and job stability</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">15. In the past year, what have you been dissatisfied about in your performance?</button>
-                        <div class="accordion-body">In a 24-hour hackathon, I completed all my tasks but lost momentum in the final hour due to fatigue. It taught me the value of pacing myself and managing energy efficiently.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">16. Rate yourself out of 5 in verbal communication. What are you doing to improve your communication skills?</button>
-                        <div class="accordion-body">I would rate myself 4.5/5. I continuously engage in team discussions and public presentations, and I'm also actively practicing through personal projects and communication exercises.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">17. Who is your role model? What qualities of that person you would like to see in your personality and why?</button>
-                        <div class="accordion-body">My role model is my great-grandfather. He was exceptional in every way—intelligent, disciplined, and respected. If I could even become 5% of what he was, I would consider myself successful. I aspire to inherit his wisdom and integrity.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">18. Write a few lines about your friends. Do you think they help/ may help you in achieving your goals? If yes, how? If no, why do you accompany them?</button>
-                        <div class="accordion-body">My friends are supportive and focused individuals. They motivate me to study, stay disciplined, and focus on building my career. Their influence keeps me grounded and goal-focused.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">19. Write 3 leadership qualities. How many do you possess? Write an instance where you have applied those qualities.</button>
-                        <div class="accordion-body"><b>Communication</b><br><b>Team Coordination</b><br><b>Decision Making</b><br>I possess all three and have demonstrated them by leading multiple college project teams. I ensure every member contributes and feels valued, which keeps the group intact and effective.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">20. So finally, tell us something more about yourself or introduce yourself.</button>
-                        <div class="accordion-body">I am a determined and ambitious individual who believes in hard work, growth, and passion. I love building things—whether it's a software project or a song. I strive to improve every day and aim to be someone who leaves a meaningful impact through innovation, leadership, and empathy.</div>
-                    </div>
-                </div>
+            <div class="video-container" id="youtube-video-container" style="display:none;">
+                <iframe id="youtube-iframe" width="1280" height="720" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </div>
