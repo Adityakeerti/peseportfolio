@@ -925,3 +925,142 @@ body {
 #profiling-modal .popup-content {
     z-index: 2100 !important;
 }
+
+/* Introduction Section */
+.introduction-section {
+    padding: 5rem 5%;
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.05), rgba(76, 175, 80, 0.05));
+    position: relative;
+    overflow: hidden;
+}
+
+.introduction-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 20%, rgba(108, 99, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(76, 175, 80, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.introduction-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.introduction-content .section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.introduction-content .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 3px;
+}
+
+.introduction-text {
+    margin-top: 2rem;
+    background: var(--dark-card);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.light-mode .introduction-text {
+    background: var(--light-card);
+}
+
+.introduction-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.introduction-text p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.introduction-text p:last-child {
+    margin-bottom: 0;
+}
+
+.introduction-text p::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.introduction-text p:first-child {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.introduction-text p:first-child::before {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .introduction-text {
+        padding: 1.5rem;
+    }
+    
+    .introduction-text p {
+        font-size: 1rem;
+        padding-left: 1.2rem;
+    }
+    
+    .introduction-text p:first-child {
+        font-size: 1.1rem;
+    }
+}
+
+/* Card Date Styles */
+.card-date {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background: rgba(108, 99, 255, 0.1);
+    border-radius: 15px;
+    display: inline-block;
+}
+
+/* Remove old timeline styles */
+.timeline-section,
+.timeline,
+.timeline::before,
+.timeline-item,
+.timeline-dot,
+.timeline-content {
+    display: none;
+}
